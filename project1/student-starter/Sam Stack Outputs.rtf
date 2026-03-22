@@ -1,0 +1,210 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red219\green39\blue218;\red251\green30\blue255;
+\red56\green185\blue199;\red57\green192\blue38;\red170\green171\blue37;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c89513\c29736\c88485;\cssrgb\c100000\c29675\c100000;
+\cssrgb\c25546\c77007\c82023;\cssrgb\c25706\c77963\c19557;\cssrgb\c72331\c71682\c18599;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 (.venv) (base) muhammedaltindal@MacBookAir student-starter % sam build\
+Building codeuri: \cf3 /Users/muhammedaltindal/Desktop/Week4-Adpipelines/DistributedForDataScienceF26/project1/student-starter/\cf4 worker\cf2  runtime: python3.
+\f1\b \cf5 12
+\f0\b0 \cf2  architecture: \
+x86_64 functions: WorkerFunction                                                                                                                                   \
+ Running PythonPipBuilder:ResolveDependencies                                                                                                                      \
+ Running PythonPipBuilder:CopySource                                                                                                                               \
+\
+\cf6 Build Succeeded\cf2 \
+\
+\cf7 Built Artifacts  : .aws-sam/build\cf2 \
+\cf7 Built Template   : .aws-sam/build/template.yaml\cf2 \
+\
+\cf7 Commands you can use next\cf2 \
+\cf7 =========================\cf2 \
+\cf7 [*] Validate SAM template: sam validate\cf2 \
+\cf7 [*] Invoke Function: sam local invoke\cf2 \
+\cf7 [*] Test Function in the Cloud: sam sync --stack-name \{\{stack-name\}\} --watch\cf2 \
+\cf7 [*] Deploy: sam deploy --guided\cf2 \
+(.venv) (base) muhammedaltindal@MacBookAir student-starter % sam deploy --guided --stack-name adflow-muhammedaltindal\
+\
+\cf7 Configuring SAM deploy\cf2 \
+\cf7 ======================\cf2 \
+\
+	Looking for config file [samconfig.toml] :  Found\
+	Reading default arguments  :  Success\
+\
+\cf7 	Setting default arguments for 'sam deploy'\cf2 \
+\cf7 	=========================================\cf2 \
+	
+\f1\b Stack Name
+\f0\b0  [adflow-muhammedaltindal]: adflow-muhammedaltindal\
+	
+\f1\b AWS Region
+\f0\b0  [us-east-1]: us-east-1\
+	
+\f1\b Parameter StudentId
+\f0\b0  [muhammedaltindal]: muhammedaltindal\
+	#Shows you resources changes to be deployed and require a 'Y' to initiate deploy\
+	
+\f1\b Confirm changes before deploy
+\f0\b0  [y/N]: n\
+	#SAM needs permission to be able to create roles to connect to the resources in your template\
+	
+\f1\b Allow SAM CLI IAM role creation
+\f0\b0  [Y/n]: y\
+	#Preserves the state of previously provisioned resources when an operation fails\
+	
+\f1\b Disable rollback
+\f0\b0  [y/N]: n\
+	
+\f1\b Save arguments to configuration file
+\f0\b0  [Y/n]: y\
+	
+\f1\b SAM configuration file
+\f0\b0  [samconfig.toml]: \
+	
+\f1\b SAM configuration environment
+\f0\b0  [default]: \
+\
+	Looking for resources needed for deployment:\
+\
+
+\f1\b 	Managed S3 bucket: aws-sam-cli-managed-default-samclisourcebucket-lrd3az6zlnhp
+\f0\b0 \
+	Auto resolution of buckets can be turned off by setting resolve_s3=False\
+	To use a specific S3 bucket, set --s3-bucket=<bucket_name>\
+	Above settings can be stored in samconfig.toml\
+                                                                                                                                                                   \
+        Parameter \cf6 "region=us-east-1"\cf2  in 
+\f1\b [
+\f0\b0 default.deploy.parameters
+\f1\b ]
+\f0\b0  is defined as a global parameter 
+\f1\b [
+\f0\b0 default.global.parameters
+\f1\b ]
+\f0\b0 .                                  \
+        This parameter will be only saved under 
+\f1\b [
+\f0\b0 default.global.parameters
+\f1\b ]
+\f0\b0  in                                                                                     \
+\cf3 /Users/muhammedaltindal/Desktop/Week4-Adpipelines/DistributedForDataScienceF26/project1/student-starter/\cf4 samconfig.toml.\cf2                                             \
+\
+	Saved arguments to config file\
+	Running 'sam deploy' for future deployments will use the parameters saved above.\
+	The above parameters can be changed by modifying samconfig.toml\
+	Learn more about samconfig.toml syntax at \
+	https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-config.html\
+\
+                                                                                                                                                                   \
+        File with same data already exists at adflow-muhammedaltindal/2832b883ef5b88cfa6d0a4dba3b3737a, skipping upload                                            \
+\
+\cf7 	Deploying with following values\cf2 \
+\cf7 	===============================\cf2 \
+	Stack name                   : adflow-muhammedaltindal\
+	Region                       : us-east-1\
+	Confirm changeset            : False\
+	Disable rollback             : False\
+	Deployment s3 bucket         : aws-sam-cli-managed-default-samclisourcebucket-lrd3az6zlnhp\
+	Capabilities                 : ["CAPABILITY_IAM"]\
+	Parameter overrides          : \{"StudentId": "muhammedaltindal"\}\
+	Signing Profiles             : \{\}\
+\
+\cf7 Initiating deployment\cf2 \
+\cf7 =====================\cf2 \
+\
+	Uploading to adflow-muhammedaltindal/a763560b01d8eb40286ccafeb575c663.template  3330 / 3330  (100.00%)\
+\
+\
+Waiting for changeset to be created..\
+\
+
+\f1\b CloudFormation stack changeset
+\f0\b0 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf7 Operation                               LogicalResourceId                       ResourceType                            Replacement                           \cf2 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf6 + Add                                   InputQueue                              AWS::SQS::Queue                         N/A                                   \cf2 \
+\cf6 + Add                                   ResultsQueue                            AWS::SQS::Queue                         N/A                                   \cf2 \
+\cf6 + Add                                   ResultsTable                            AWS::DynamoDB::Table                    N/A                                   \cf2 \
+\cf6 + Add                                   WorkerFunctionRole                      AWS::IAM::Role                          N/A                                   \cf2 \
+\cf6 + Add                                   WorkerFunctionSQSTrigger                AWS::Lambda::EventSourceMapping         N/A                                   \cf2 \
+\cf6 + Add                                   WorkerFunction                          AWS::Lambda::Function                   N/A                                   \cf2 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\
+\
+Changeset created successfully. arn:aws:cloudformation:us-east-1:135532121826:changeSet/samcli-deploy1773773303/790dd6c4-d005-491e-84ed-6912d8a1d82f\
+\
+\
+2026-03-17 14:48:30 - Waiting for stack create/update to complete\
+\
+
+\f1\b CloudFormation events from stack operations (refresh every 5.0 seconds)
+\f0\b0 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf7 ResourceStatus                          ResourceType                            LogicalResourceId                       ResourceStatusReason                  \cf2 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::CloudFormation::Stack              adflow-muhammedaltindal                 User Initiated                        \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::SQS::Queue                         ResultsQueue                            -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::DynamoDB::Table                    ResultsTable                            -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::SQS::Queue                         InputQueue                              -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::SQS::Queue                         ResultsQueue                            Resource creation Initiated           \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::SQS::Queue                         InputQueue                              Resource creation Initiated           \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::DynamoDB::Table                    ResultsTable                            Resource creation Initiated           \cf2 \
+\cf7 CREATE_IN_PROGRESS -                    AWS::SQS::Queue                         ResultsQueue                            Eventual consistency check initiated  \cf2 \
+\cf7 CONFIGURATION_COMPLETE                                                                                                                                        \cf2 \
+\cf7 CREATE_IN_PROGRESS -                    AWS::SQS::Queue                         InputQueue                              Eventual consistency check initiated  \cf2 \
+\cf7 CONFIGURATION_COMPLETE                                                                                                                                        \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::DynamoDB::Table                    ResultsTable                            -                                     \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::SQS::Queue                         ResultsQueue                            -                                     \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::SQS::Queue                         InputQueue                              -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::IAM::Role                          WorkerFunctionRole                      -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::IAM::Role                          WorkerFunctionRole                      Resource creation Initiated           \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::IAM::Role                          WorkerFunctionRole                      -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::Lambda::Function                   WorkerFunction                          -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::Lambda::Function                   WorkerFunction                          Resource creation Initiated           \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::Lambda::Function                   WorkerFunction                          -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::Lambda::EventSourceMapping         WorkerFunctionSQSTrigger                -                                     \cf2 \
+\cf7 CREATE_IN_PROGRESS                      AWS::Lambda::EventSourceMapping         WorkerFunctionSQSTrigger                Resource creation Initiated           \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::Lambda::EventSourceMapping         WorkerFunctionSQSTrigger                -                                     \cf2 \
+\cf6 CREATE_COMPLETE                         AWS::CloudFormation::Stack              adflow-muhammedaltindal                 -                                     \cf2 \
+\cf7 -------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\
+
+\f1\b CloudFormation outputs from deployed stack
+\f0\b0 \
+\cf7 ----------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf7 Outputs                                                                                                                                                        \cf2 \
+\cf7 ----------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\cf6 Key                 TableName                                                                                                                                  \cf2 \
+\cf6 Description         Name of your DynamoDB results table                                                                                                        \cf2 \
+\cf6 Value               adflow-muhammedaltindal-results                                                                                                            \cf2 \
+\
+\cf6 Key                 WorkerFunctionName                                                                                                                         \cf2 \
+\cf6 Description         Name of your Lambda function                                                                                                               \cf2 \
+\cf6 Value               adflow-muhammedaltindal-worker                                                                                                             \cf2 \
+\
+\cf6 Key                 InputQueueArn                                                                                                                              \cf2 \
+\cf6 Description         ARN of your input queue (needed for competition subscription)                                                                              \cf2 \
+\cf6 Value               arn:aws:sqs:us-east-1:135532121826:adflow-muhammedaltindal-input                                                                           \cf2 \
+\
+\cf6 Key                 ResultsQueueUrl                                                                                                                            \cf2 \
+\cf6 Description         URL of your results queue                                                                                                                  \cf2 \
+\cf6 Value               https://sqs.us-east-1.amazonaws.com/135532121826/adflow-muhammedaltindal-results                                                           \cf2 \
+\
+\cf6 Key                 WorkerLogGroup                                                                                                                             \cf2 \
+\cf6 Description         CloudWatch log group for viewing Lambda logs                                                                                               \cf2 \
+\cf6 Value               /aws/lambda/adflow-muhammedaltindal-worker                                                                                                 \cf2 \
+\
+\cf6 Key                 InputQueueUrl                                                                                                                              \cf2 \
+\cf6 Description         URL of your input queue (paste into test apparatus)                                                                                        \cf2 \
+\cf6 Value               https://sqs.us-east-1.amazonaws.com/135532121826/adflow-muhammedaltindal-input                                                             \cf2 \
+\cf7 ----------------------------------------------------------------------------------------------------------------------------------------------------------------\cf2 \
+\
+\
+Successfully created/updated stack - adflow-muhammedaltindal in us-east-1\
+\
+\
+}
